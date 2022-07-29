@@ -1,0 +1,5 @@
+c = float(input("Digite a temperatura: "))
+f = ((c * 1.8 )+32)
+k = (c + 273.15)
+print(f'Valor em Fahrenheit {f}')
+print(f'Valor em Kelvin {k}')

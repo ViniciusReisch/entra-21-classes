@@ -1,0 +1,16 @@
+arquivo = open("clientes sistema novo.txt", "rt")
+novo = arquivo.read().splitlines()
+arquivo2 = open("clientes sistema antigo.txt", "rt")
+antigo = arquivo2.read().splitlines()
+new_arquivo = set()
+antigoSet = set(antigo)
+novoSet = set(novo)
+
+print(f"Para não haver mais cnpj iguais foram removidos {len(novoSet.intersection(antigoSet))}")
+print(len(antigoSet.intersection(novoSet)))
+print(f"Cnpjs duplicados {novoSet.intersection(antigoSet)}")
+print(f"Cnpjs unicos {}")
+
+new_arquivo.update(antigo)
+new_arquivo.update(novo)
+print(new_arquivo)
